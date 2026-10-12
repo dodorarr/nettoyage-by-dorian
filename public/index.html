@@ -128,7 +128,12 @@ input,select,textarea{width:100%;padding:12px;border-radius:10px;border:1px soli
 .ba .pair{display:grid;grid-template-columns:1fr 1fr;gap:10px}
 .ba figure{margin:0;position:relative;border-radius:10px;overflow:hidden}
 .ba img{width:100%;aspect-ratio:9/14;object-fit:cover}
-.ba-grid{display:grid;gap:16px;margin-top:16px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.ba-grid{display:grid;gap:16px;margin-top:16px;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr))}
+.ba.wide{margin-top:16px}
+.ba.wide img{aspect-ratio:16/9}
+@media (max-width:640px){.ba.wide .pair{grid-template-columns:1fr}}
+.ba.single img{aspect-ratio:9/7;object-position:50% 45%}
+.ba.single .lbl.ap{top:auto;bottom:10px}
 /* Galerie */
 .subh{margin:40px 0 16px;text-align:center}
 .photos{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
@@ -293,6 +298,13 @@ footer a{color:#fff}
       </div>
       <figcaption>Terrasse en pierre naturelle : la même dalle, nettoyée en haut, pas encore en bas.</figcaption>
     </figure>
+    <div class="ba wide">
+      <h3>Mur d'entrée et portail en enduit</h3>
+      <div class="pair">
+        <figure><img src="img/chantier-portail.webp" alt="Mur d'entrée en enduit blanc verdi par les algues, avec le matériel de nettoyage installé" loading="lazy" width="1200" height="676"><span class="lbl av">AVANT</span></figure>
+        <figure><img src="img/entree-apres.webp" alt="Le même mur d'entrée redevenu blanc, à côté du portail vert, après nettoyage" loading="lazy" width="1200" height="676"><span class="lbl ap">APRÈS</span></figure>
+      </div>
+    </div>
     <div class="ba-grid">
       <div class="ba">
         <h3>Escalier de piscine en pierre</h3>
@@ -315,13 +327,17 @@ footer a{color:#fff}
           <figure><img src="img/allee-apres-2.webp" alt="Allée en pierre propre menant à la maison, après nettoyage" loading="lazy" width="720" height="1280"><span class="lbl ap">APRÈS</span></figure>
         </div>
       </div>
+      <div class="ba single">
+        <h3>Terrasse en bois exotique</h3>
+        <figure><img src="img/bois-moitie.webp" alt="Terrasse en lames de bois à moitié nettoyée : bois grisé en haut, bois rouge d'origine retrouvé en bas" loading="lazy" width="720" height="1279"><span class="lbl av">AVANT</span><span class="lbl ap">APRÈS</span></figure>
+      </div>
     </div>
     <h3 class="subh">Autres chantiers</h3>
     <div class="photos">
       <figure><img src="img/piscine-apres.webp" alt="Plage de piscine et escaliers en pierre naturelle propres après nettoyage" loading="lazy" width="1600" height="901"><figcaption>Après : plage de piscine</figcaption></figure>
       <figure><img src="img/terrasse-apres.webp" alt="Terrasse en dalles de pierre propre le long de la maison, après nettoyage" loading="lazy" width="720" height="1279"><figcaption>Après : terrasse le long de la maison</figcaption></figure>
       <figure><img src="img/mur-avant.webp" alt="Mur de clôture en enduit blanc couvert de coulures d'algues vertes et noires, avant nettoyage" loading="lazy" width="1200" height="676"><figcaption>Avant : mur couvert d'algues</figcaption></figure>
-      <figure><img src="img/chantier-portail.webp" alt="Chantier en cours devant un portail : nettoyeur haute pression et nettoyeur de surfaces installés" loading="lazy" width="1200" height="676"><figcaption>Chantier en cours, matériel installé</figcaption></figure>
+      <figure><img src="img/derriere-apres.webp" alt="Escalier carrelé et dalles en pierre propres à l'arrière de la maison, après nettoyage" loading="lazy" width="1200" height="676"><figcaption>Après : escalier et dalles à l'arrière</figcaption></figure>
       <figure><img src="img/seuil-avant.webp" alt="Seuil de portail en béton et pilier encrassés par la mousse, avant nettoyage" loading="lazy" width="700" height="1243"><figcaption>Avant : seuil et pilier encrassés</figcaption></figure>
     </div>
   </div>
