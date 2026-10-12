@@ -121,6 +121,16 @@ input,select,textarea{width:100%;padding:12px;border-radius:10px;border:1px soli
 .photos .tall img{aspect-ratio:auto;height:100%}
 .photos figcaption{position:absolute;left:10px;bottom:10px;background:rgba(15,42,74,.85);color:#fff;font-size:.85rem;padding:5px 10px;border-radius:8px}
 @media (max-width:640px){.photos{grid-template-columns:1fr}.photos .tall{grid-row:auto}.photos .tall img{aspect-ratio:9/12}}
+/* Avant / après */
+.ba{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);padding:14px;margin-top:24px}
+.ba h3{margin:4px 4px 12px}
+.ba .pair{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.ba figure{margin:0;position:relative;border-radius:10px;overflow:hidden}
+.ba img{width:100%;aspect-ratio:9/14;object-fit:cover}
+.ba .lbl{position:absolute;top:10px;left:10px;font-weight:800;font-size:.8rem;letter-spacing:.06em;padding:5px 10px;border-radius:999px;color:#fff}
+.ba .av{background:#c0392b}.ba .ap{background:var(--green)}
+.ba-grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(320px,1fr))}
+.subh{margin:40px 0 0;text-align:center}
 
 /* À propos */
 .about{display:grid;gap:28px;grid-template-columns:1fr 1fr;align-items:center}
@@ -272,6 +282,23 @@ footer a{color:#fff}
       <h2>Mes chantiers</h2>
       <p class="lead">Des chantiers réels, chez des particuliers près de Nantes. Murs verdis par les algues, seuils et allées encrassés : voilà ce que je fais disparaître.</p>
     </div>
+    <div class="ba-grid">
+      <div class="ba">
+        <h3>Allée en pierre naturelle</h3>
+        <div class="pair">
+          <figure><img src="img/allee-avant.webp" alt="Allée en dalles de pierre grisée et tachée entre deux haies, avant nettoyage" loading="lazy" width="720" height="1280"><span class="lbl av">AVANT</span></figure>
+          <figure><img src="img/allee-apres.webp" alt="La même allée en pierre, couleurs claires retrouvées, après nettoyage" loading="lazy" width="720" height="1280"><span class="lbl ap">APRÈS</span></figure>
+        </div>
+      </div>
+      <div class="ba">
+        <h3>Allée en pierre : l'autre côté</h3>
+        <div class="pair">
+          <figure><img src="img/allee-avant-2.webp" alt="Dalles de pierre noircies et tachées, avant nettoyage" loading="lazy" width="720" height="1280"><span class="lbl av">AVANT</span></figure>
+          <figure><img src="img/allee-apres-2.webp" alt="Allée en pierre propre menant à la maison, après nettoyage" loading="lazy" width="720" height="1280"><span class="lbl ap">APRÈS</span></figure>
+        </div>
+      </div>
+    </div>
+    <h3 class="subh">Autres chantiers</h3>
     <div class="photos" style="margin-top:24px">
       <figure><img src="img/mur-avant.webp" alt="Mur de clôture en enduit blanc couvert de coulures d'algues vertes et noires, avant nettoyage" loading="lazy" width="1200" height="676"><figcaption>Avant : mur couvert d'algues</figcaption></figure>
       <figure class="tall"><img src="img/seuil-avant.webp" alt="Seuil de portail en béton et pilier encrassés par la mousse, avant nettoyage" loading="lazy" width="700" height="1243"><figcaption>Avant : seuil et pilier encrassés</figcaption></figure>
